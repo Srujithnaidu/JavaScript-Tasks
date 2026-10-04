@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100vh;
+            background-color:rgb(249, 225, 204) ;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-family: Georgia;
+            font-size: 25px;
+        }
+        #one{
+           display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }   
+        #two{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }    
+        #t_one{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        } 
+        #t_two{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        } 
+        #t_three{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        } 
+    </style>
+  </head>
+  <body>
+    <div id="box">
+        <h1>Basic Math Calculations</h1>
+        <div id="one">
+            <div>
+                <label>Enter num1: </label>
+                <input type="text" placeholder="Enter number only" id="num1" />
+            </div>
+            <div>
+                <label>Enter num2: </label>
+                <input type="text" placeholder="Enter number only" id="num2" />
+            </div>
+            <div>
+                <label>Result: </label>
+                <input type="text" id="res" readonly /><br />
+            </div>
+        </div>
+        <div id="two">
+           <div id="t_one">
+                <button onclick="addTwonums()">Add</button>
+                <button onclick="subTwonums()">Sub</button><br>
+           </div>
+           <div id="t_two">
+                <button onclick="mulTwonums()">Mul</button>
+                <button onclick="DivTwonums()">Div</button><br>
+           </div>
+           <div id="t_three">
+             <button onclick="ModTwonums()">Mod</button>
+           </div>
+        </div>
+    </div>
+
+    <script>
+      function addTwonums() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var sum = n1 + n2;
+        document.getElementById("res").value = sum;
+      }
+      function subTwonums() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var diff = n1 - n2;
+        document.getElementById("res").value = diff;
+      }
+      function mulTwonums() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var mul = n1 * n2;
+        document.getElementById("res").value = mul;
+      }
+      function DivTwonums() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var div = n1 / n2;
+        document.getElementById("res").value = div;
+      }
+      function ModTwonums() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        var remainder = n1 % n2;
+        document.getElementById("res").value = remainder;
+      }
+    </script>
+  </body>
+</html>

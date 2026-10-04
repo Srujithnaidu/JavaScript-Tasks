@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic Building Tasks</title>
+    <link rel="stylesheet" href="logic_sty.css" />
+  </head>
+  <body>
+    <h1>Simple Calculations</h1>
+    <div class="container">
+      <div class="card">
+        <h2>1. Average of 3 Numbers</h2>
+        <input type="number" id="avg1" placeholder="Enter number 1" />
+        <input type="number" id="avg2" placeholder="Enter number 2" />
+        <input type="number" id="avg3" placeholder="Enter number 3" />
+        <button onclick="average()">Calculate</button>
+        <input type="text" id="avgResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>2. Average Using DOM</h2>
+        <input type="number" id="dom1" placeholder="Enter number 1" />
+        <input type="number" id="dom2" placeholder="Enter number 2" />
+        <input type="number" id="dom3" placeholder="Enter number 3" />
+        <button onclick="averageDOM()">Calculate</button>
+        <input type="text" id="domResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>3. Sum of First n Natural Numbers</h2>
+        <input type="number" id="sumN" placeholder="Enter n" />
+        <button onclick="sumNatural()">Calculate</button>
+        <input type="text" id="sumResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>4. Average of First n Natural Numbers</h2>
+        <input type="number" id="avgN" placeholder="Enter n" />
+        <button onclick="averageNatural()">Calculate</button>
+        <input type="text" id="avgNResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>5. Profit Percentage</h2>
+        <input type="number" id="cp" placeholder="Cost Price" />
+        <input type="number" id="sp" placeholder="Selling Price" />
+        <button onclick="profitPercentage()">Calculate</button>
+        <input type="text" id="profitResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>6. Simple Interest</h2>
+        <input type="number" id="principal" placeholder="Principal" />
+        <input type="number" id="rate" placeholder="Rate (%)" />
+        <input type="number" id="time" placeholder="Time" />
+        <button onclick="simpleInterest()">Calculate</button>
+        <input type="text" id="siResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>7. Missing Angle of Triangle</h2>
+        <input type="number" id="angle1" placeholder="Enter angle 1" />
+        <input type="number" id="angle2" placeholder="Enter angle 2" />
+        <button onclick="missingAngle()">Calculate</button>
+        <input type="text" id="angleResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>8. Last Digit of a Number</h2>
+        <input type="number" id="lastNum" placeholder="Enter number" />
+        <button onclick="lastDigit()">Calculate</button>
+        <input type="text" id="lastResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>9. Remove Last Digit</h2>
+        <input type="number" id="removeNum" placeholder="Enter number" />
+        <button onclick="removeLastDigit()">Calculate</button>
+        <input type="text" id="removeResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>10. First Digit of 3-Digit Number</h2>
+        <input type="number" id="threeDigit" placeholder="Enter 3-digit number"/>
+        <button onclick="firstDigit3()">Calculate</button>
+        <input type="text" id="threeResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>11. First Digit of 5-Digit Number</h2>
+        <input type="number" id="fiveDigit" placeholder="Enter 5-digit number"/>
+        <button onclick="firstDigit5()">Calculate</button>
+        <input type="text" id="fiveResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>12. Celsius → Fahrenheit</h2>
+        <input type="number" id="celsius" placeholder="Enter Celsius" />
+        <button onclick="celsiusToFahrenheit()">Convert</button>
+        <input type="text" id="celsiusResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>13. Fahrenheit → Celsius</h2>
+        <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" />
+        <button onclick="fahrenheitToCelsius()">Convert</button>
+        <input
+          type="text" id="fahrenheitResult" placeholder="Result" readonly/>
+      </div>
+      <div class="card">
+        <h2>14. Gross Salary</h2>
+        <input type="number" id="basic" placeholder="Basic Salary" />
+        <input type="number" id="hra" placeholder="HRA" />
+        <input type="number" id="da" placeholder="DA" />
+        <button onclick="grossSalary()">Calculate</button>
+        <input type="text" id="salaryResult" placeholder="Gross Salary"readonly/>
+      </div>
+      <div class="card">
+        <h2>15. Swap Using Third Variable</h2>
+        <input type="number" id="swap1" placeholder="Enter number 1" />
+        <input type="number" id="swap2" placeholder="Enter number 2" />
+        <button onclick="swapWithThird()">Swap</button>
+        <input type="text" id="swapThirdResult" placeholder="Result" readonly />
+      </div>
+      <div class="card">
+        <h2>16. Swap Without Third Variable</h2>
+        <input type="number" id="swapNo1" placeholder="Enter number 1" />
+        <input type="number" id="swapNo2" placeholder="Enter number 2" />
+        <button onclick="swapWithoutThird()">Swap</button>
+        <input type="text" id="swapNoResult" placeholder="Result" readonly />
+      </div>
+    </div>
+    <script src="logic_spt.js"></script>
+  </body>
+</html>
