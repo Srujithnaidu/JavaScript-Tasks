@@ -1,0 +1,108 @@
+/* ================================
+   JavaScript Loop Programs
+   Simple External CSS
+   ================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.program {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.program > label:first-child {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.program > label:not(:first-child) {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a70e8;
+}
+
+button {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a70e8;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3558c7;
+}
+
+.result {
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 20px;
+    border-radius: 5px;
+    background-color: #f0f4ff;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .program {
+        padding: 15px;
+    }
+}
