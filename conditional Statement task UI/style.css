@@ -1,0 +1,213 @@
+/* ================================
+   JavaScript Conditional Statements
+   External CSS
+   ================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+    background:
+        radial-gradient(circle at top left, rgba(99, 102, 241, 0.14), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.12), transparent 30%),
+        #f6f8fc;
+    padding: 40px 20px 60px;
+}
+
+.container {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #4f46e5;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.page-header h1 {
+    color: #111827;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.topic-section {
+    margin-bottom: 48px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+
+.section-heading h2 {
+    color: #111827;
+    font-size: 1.55rem;
+    margin-bottom: 4px;
+}
+
+.section-heading p {
+    color: #6b7280;
+    font-size: 0.92rem;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.exercise-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-height: 235px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-4px);
+    border-color: #c7d2fe;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.1);
+}
+
+.exercise-number {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 28px;
+    padding: 0 9px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    color: #4338ca;
+    background: #eef2ff;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.exercise-card label:first-of-type {
+    min-height: 42px;
+    color: #111827;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.exercise-card label:not(:first-of-type) {
+    color: #6b7280;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.exercise-card input {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    color: #111827;
+    background: #ffffff;
+    font-size: 0.92rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-card input::placeholder {
+    color: #9ca3af;
+}
+
+.exercise-card input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.exercise-card button {
+    width: 100%;
+    margin-top: auto;
+    padding: 11px 14px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.exercise-card button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.24);
+}
+
+.exercise-card button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .exercise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 28px 14px 40px;
+    }
+
+    .page-header {
+        margin-bottom: 32px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .section-number {
+        flex-basis: 44px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exercise-card {
+        min-height: auto;
+    }
+}

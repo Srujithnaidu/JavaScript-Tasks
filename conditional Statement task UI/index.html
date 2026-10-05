@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditional Statements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">JAVASCRIPT PRACTICE</p>
+            <h1>Conditional Statements</h1>
+        </header>
+
+        <section class="topic-section">
+            <div class="section-heading">
+                <div>
+                    <h2>IF Statement</h2>
+                </div>
+            </div>
+
+            <div class="exercise-grid">
+                <article class="exercise-card">
+                    <span class="exercise-number">01</span>
+                    <label>Check whether a person is eligible to vote</label>
+                    <label>Enter age:</label>
+                    <input type="number" id="num1" placeholder="Enter age">
+                    <button onclick="checkVotingAge()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">02</span>
+                    <label>Check whether a student passed</label>
+                    <label>Enter marks:</label>
+                    <input type="number" id="num2" placeholder="Enter marks">
+                    <button onclick="checkPass()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">03</span>
+                    <label>Check whether the customer gets free delivery</label>
+                    <label>Enter shopping amount:</label>
+                    <input type="number" id="num3" placeholder="Enter amount">
+                    <button onclick="checkFreeDelivery()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">04</span>
+                    <label>Check whether a person can watch the movie</label>
+                    <label>Enter age:</label>
+                    <input type="number" id="num4" placeholder="Enter age">
+                    <button onclick="checkMovieAge()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">05</span>
+                    <label>Check whether the customer can withdraw money</label>
+                    <label>Enter balance:</label>
+                    <input type="number" id="num5" placeholder="Enter balance">
+                    <label>Enter withdrawal amount:</label>
+                    <input type="number" id="withdrawalAmount" placeholder="Enter amount">
+                    <button onclick="checkWithdrawal()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">06</span>
+                    <label>Check whether the student is eligible for the exam</label>
+                    <label>Enter total classes:</label>
+                    <input type="number" id="num6" placeholder="Total classes">
+                    <label>Enter attended classes:</label>
+                    <input type="number" id="attendedClasses" placeholder="Attended classes">
+                    <button onclick="checkAttendance()">Check</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <div class="section-heading">
+                <div>
+                    <h2>IF...ELSE Statement</h2>
+                </div>
+            </div>
+
+            <div class="exercise-grid">
+                <article class="exercise-card">
+                    <span class="exercise-number">07</span>
+                    <label>Check whether a number is positive or negative</label>
+                    <label>Enter a number:</label>
+                    <input type="number" id="num7" placeholder="Enter number">
+                    <button onclick="checkPositiveNegative()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">08</span>
+                    <label>Check whether a person can drive</label>
+                    <label>Enter age:</label>
+                    <input type="number" id="num8" placeholder="Enter age">
+                    <button onclick="checkDrivingAge()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">09</span>
+                    <label>Check the password</label>
+                    <label>Enter password:</label>
+                    <input type="text" id="num9" placeholder="Enter password">
+                    <button onclick="checkPassword()">Login</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">10</span>
+                    <label>Check whether the student passed or failed</label>
+                    <label>Enter marks:</label>
+                    <input type="number" id="num10" placeholder="Enter marks">
+                    <button onclick="checkStudentResult()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">11</span>
+                    <label>Check whether the account has sufficient balance</label>
+                    <label>Enter account balance:</label>
+                    <input type="number" id="num11" placeholder="Enter balance">
+                    <label>Enter amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+                    <button onclick="checkBalance()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">12</span>
+                    <label>Check the discount based on total amount</label>
+                    <label>Enter total amount:</label>
+                    <input type="number" id="num12" placeholder="Enter amount">
+                    <button onclick="checkDiscount()">Check</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="topic-section">
+            <div class="section-heading">
+                <div>
+                    <h2>IF...ELSE IF Statement</h2>
+                </div>
+            </div>
+
+            <div class="exercise-grid">
+                <article class="exercise-card">
+                    <span class="exercise-number">13</span>
+                    <label>Display grade based on marks</label>
+                    <label>Enter marks:</label>
+                    <input type="number" id="num13" placeholder="Enter marks">
+                    <button onclick="displayGrade()">Display Grade</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">14</span>
+                    <label>Display weather condition based on temperature</label>
+                    <label>Enter temperature:</label>
+                    <input type="number" id="num14" placeholder="Enter temperature">
+                    <button onclick="checkTemperature()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">15</span>
+                    <label>Display ticket price based on age</label>
+                    <label>Enter age:</label>
+                    <input type="number" id="num15" placeholder="Enter age">
+                    <button onclick="displayTicketPrice()">Display Price</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">16</span>
+                    <label>Display electricity usage category</label>
+                    <label>Enter units:</label>
+                    <input type="number" id="num16" placeholder="Enter units">
+                    <button onclick="checkElectricityUsage()">Check</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">17</span>
+                    <label>Display bonus based on experience</label>
+                    <label>Enter experience in years:</label>
+                    <input type="number" id="num17" placeholder="Enter years">
+                    <button onclick="displayBonus()">Display Bonus</button>
+                </article>
+
+                <article class="exercise-card">
+                    <span class="exercise-number">18</span>
+                    <label>Display delivery charge based on distance</label>
+                    <label>Enter distance in km:</label>
+                    <input type="number" id="num18" placeholder="Enter distance">
+                    <button onclick="displayDeliveryCharge()">Display Charge</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // IF STATEMENT
+
+        // 1. Voting eligibility
+        function checkVotingAge() {
+            let age = parseInt(document.getElementById("num1").value);
+
+            if (age >= 18) {
+                document.write("You are eligible to vote.");
+            }
+        }
+
+        // 2. Student passed
+        function checkPass() {
+            let marks = parseInt(document.getElementById("num2").value);
+
+            if (marks >= 40) {
+                document.write("Student passed.");
+            }
+        }
+
+        // 3. Free delivery
+        function checkFreeDelivery() {
+            let shoppingAmount = parseInt(document.getElementById("num3").value);
+
+            if (shoppingAmount >= 500) {
+                document.write("You get free delivery.");
+            }
+        }
+
+        // 4. Movie eligibility
+        function checkMovieAge() {
+            let customerAge = parseInt(document.getElementById("num4").value);
+
+            if (customerAge >= 18) {
+                document.write("You can watch the movie.");
+            }
+        }
+
+        // 5. Withdrawal eligibility
+        function checkWithdrawal() {
+            let balance = parseInt(document.getElementById("num5").value);
+            let withdrawalAmount = parseInt(document.getElementById("withdrawalAmount").value);
+
+            if (balance >= withdrawalAmount) {
+                document.write("You can withdraw the money.");
+            }
+        }
+
+        // 6. Exam eligibility based on attendance
+        function checkAttendance() {
+            let totalClasses = parseInt(document.getElementById("num6").value);
+            let attendedClasses = parseInt(document.getElementById("attendedClasses").value);
+
+            let attendance = (attendedClasses / totalClasses) * 100;
+
+            if (attendance >= 75) {
+                document.write("Student is eligible for the exam.");
+            }
+        }
+
+        //--------------------------------------------------------------
+        // IF ELSE STATEMENT
+
+        // 7. Positive or negative
+        function checkPositiveNegative() {
+            let number = parseInt(document.getElementById("num7").value);
+
+            if (number >= 0) {
+                document.write("The number is positive.");
+            } else {
+                document.write("The number is negative.");
+            }
+        }
+
+        // 8. Driving eligibility
+        function checkDrivingAge() {
+            let drivingAge = parseInt(document.getElementById("num8").value);
+
+            if (drivingAge >= 18) {
+                document.write("You can drive.");
+            } else {
+                document.write("You cannot drive yet.");
+            }
+        }
+
+        // 9. Password checking
+        function checkPassword() {
+            let password = document.getElementById("num9").value;
+
+            if (password == "hello123") {
+                document.write("Login successful.");
+            } else {
+                document.write("Incorrect password.");
+            }
+        }
+
+        // 10. Pass or fail
+        function checkStudentResult() {
+            let studentMarks = parseInt(document.getElementById("num10").value);
+
+            if (studentMarks >= 40) {
+                document.write("Pass");
+            } else {
+                document.write("Fail");
+            }
+        }
+
+        // 11. Sufficient balance
+        function checkBalance() {
+            let accountBalance = parseInt(document.getElementById("num11").value);
+            let amount = parseInt(document.getElementById("amount").value);
+
+            if (accountBalance >= amount) {
+                document.write("Please collect your cash.");
+            } else {
+                document.write("Insufficient balance.");
+            }
+        }
+
+        // 12. Discount
+        function checkDiscount() {
+            let totalAmount = parseInt(document.getElementById("num12").value);
+
+            if (totalAmount >= 2000) {
+                document.write("You get a 20% discount.");
+            } else {
+                document.write("You get a 10% discount.");
+            }
+        }
+
+        //--------------------------------------------------------------
+        // IF ELSE IF STATEMENT
+
+        // 13. Grade calculation
+        function displayGrade() {
+            let marksObtained = parseInt(document.getElementById("num13").value);
+
+            if (marksObtained >= 90) {
+                document.write("Grade A+");
+            } else if (marksObtained >= 75) {
+                document.write("Grade A");
+            } else if (marksObtained >= 60) {
+                document.write("Grade B");
+            } else {
+                document.write("Grade C");
+            }
+        }
+
+        // 14. Temperature category
+        function checkTemperature() {
+            let temperature = parseInt(document.getElementById("num14").value);
+
+            if (temperature >= 35) {
+                document.write("Very hot");
+            } else if (temperature >= 25) {
+                document.write("Warm weather");
+            } else if (temperature >= 15) {
+                document.write("Cool weather");
+            }
+        }
+
+        // 15. Ticket price
+        function displayTicketPrice() {
+            let personAge = parseInt(document.getElementById("num15").value);
+
+            if (personAge < 5) {
+                document.write("Ticket is free.");
+            } else if (personAge < 18) {
+                document.write("Ticket price is ₹100.");
+            } else if (personAge < 60) {
+                document.write("Ticket price is ₹200.");
+            } else {
+                document.write("Ticket price is ₹120.");
+            }
+        }
+
+        // 16. Electricity usage
+        function checkElectricityUsage() {
+            let units = parseInt(document.getElementById("num16").value);
+
+            if (units <= 100) {
+                document.write("Low electricity usage.");
+            } else if (units <= 200) {
+                document.write("Moderate electricity usage.");
+            } else if (units <= 300) {
+                document.write("High electricity usage.");
+            } else {
+                document.write("Very high electricity usage.");
+            }
+        }
+
+        // 17. Bonus based on experience
+        function displayBonus() {
+            let experience = parseInt(document.getElementById("num17").value);
+
+            if (experience < 2) {
+                document.write("Bonus: ₹5,000");
+            } else if (experience < 5) {
+                document.write("Bonus: ₹10,000");
+            } else if (experience < 8) {
+                document.write("Bonus: ₹20,000");
+            } else {
+                document.write("Bonus: ₹30,000");
+            }
+        }
+
+        // 18. Delivery charge
+        function displayDeliveryCharge() {
+            let distance = parseInt(document.getElementById("num18").value);
+
+            if (distance <= 5) {
+                document.write("Delivery charge: ₹30");
+            } else if (distance <= 10) {
+                document.write("Delivery charge: ₹50");
+            } else if (distance <= 20) {
+                document.write("Delivery charge: ₹80");
+            } else {
+                document.write("Delivery charge: ₹120");
+            }
+        }
+
+    </script>
+</body>
+</html>
